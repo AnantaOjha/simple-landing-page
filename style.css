@@ -120,3 +120,57 @@ footer { max-width: 1200px; margin: auto; padding: 0 36px 30px; display: flex; j
     transform: translateY(0);
   }
 }
+
+
+
+
+/* ===== CARD HOVER EFFECTS ===== */
+
+.git-commands .feature {
+  transform: translateY(0);
+  transition:
+    transform 0.4s cubic-bezier(.2,.8,.2,1),
+    box-shadow 0.4s ease,
+    border-color 0.3s ease;
+}
+
+.git-commands .feature::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(139,109,245,0.07),
+    transparent 60%
+  );
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+
+.git-commands .feature:hover::after {
+  opacity: 1;
+}
+
+.git-commands .feature:hover {
+  transform: translateY(-10px) scale(1.015);
+  box-shadow: 0 25px 55px rgba(80,60,150,0.13);
+}
+
+.git-commands .feature-icon {
+  transition: all 0.35s ease;
+}
+
+.git-commands .feature:hover .feature-icon {
+  transform: rotate(-8deg) scale(1.12);
+  background: #805ce8;
+  color: #fff;
+}
+
+.git-commands .feature h3 {
+  transition: color 0.3s ease;
+}
+
+.git-commands .feature:hover h3 {
+  color: #805ce8;
+}
