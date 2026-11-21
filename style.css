@@ -174,3 +174,26 @@ footer { max-width: 1200px; margin: auto; padding: 0 36px 30px; display: flex; j
 .git-commands .feature:hover h3 {
   color: #805ce8;
 }
+
+
+/* ===== GLASSMORPHISM ===== */
+
+.site-header {
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  background: rgba(255, 255, 255, 0.82);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.hero-visual .visual-card {
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+}
+
+.floating-note {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
